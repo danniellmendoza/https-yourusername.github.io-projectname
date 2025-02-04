@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Time</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>What time are you free?</h2>
+        <input type="time" class="time-picker" id="timeInput">
+        <button class="submit-btn" onclick="submitTime()">Submit</button>
+    </div>
+
+    <script>
+        function submitTime() {
+            let time = document.getElementById("timeInput").value;
+            if (time) {
+                alert("Great! See you at " + time + "!");
+            } else {
+                alert("Please select a time.");
+            }
+        }
+    </script>
+
+</body>
+</html>
+
